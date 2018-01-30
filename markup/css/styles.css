@@ -3,17 +3,12 @@ body {
 	margin: 0;
 	color: #000;
 	font: 14px/24px Georgia, serif;
-
 }
-
 
 .header-logo {
 	margin: 82px 0 60px 0;
 	text-align: center;
 }
-
-
-
 
 .wrapper {
 	width: 1063px;
@@ -27,7 +22,6 @@ body {
 	text-align: center;
 	font-family: 'Times Mew Roman', Georgia, serif;
 }
-
 
 .nav__list li {
 	display: inline-block;
@@ -66,13 +60,11 @@ body {
 	text-transform: uppercase;
 	display: inline-block;
 	font-family: Arial, sans-serif;
-
 }
 
 .main h1{
 	margin: 28px 0 22px 0;
 	font: bold 36px/24px 'Times New Roman', Georgia, serif;
-
 }
 
 .main p {
@@ -96,9 +88,7 @@ body {
 }
 
 .main ul {
-	
-	padding-left: 18px;
-	
+	padding-left: 18px;	
 }
 
 .main .ipsum_dolor {
