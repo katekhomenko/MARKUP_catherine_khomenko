@@ -1,0 +1,343 @@
+body {
+	background: #fff;
+	margin: 0;
+	color: #000;
+	font: 14px/24px Georgia, serif;
+}
+
+.header {
+	padding: 81px 0 0 0;
+}
+
+.header-logo {
+	margin: 0 0 56px 0;
+	text-align: center;
+}
+
+.wrapper {
+	width: 1063px;
+	margin: 0 auto;
+}
+
+.nav__list {
+	margin: 0 0 30px 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-family: 'Times Mew Roman', Georgia, serif;
+	line-height: 14px;
+}
+
+.nav__list li {
+	display: inline-block;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+
+.nav__list a {
+	color: #626262;
+	text-decoration: none;
+}
+
+.nav__list a:hover {
+	color: red;
+}
+
+.nav__list a:active {
+	color: green;
+}
+
+.main {
+	margin: 0;
+	padding: 0;
+	color: #626262;
+}
+
+.main .main-photo {
+	display: block;
+	margin: 0 0 46px 0;
+}
+
+.container {
+	margin: 0 153px 0 0;
+}
+
+.main .category,
+.main .comment {
+	color: #b4ad9e;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: Arial, sans-serif;
+}
+
+.main .category {
+	margin: 0 0 23px 0;
+}
+
+.main h1{
+	margin: 0 0 15px 0;
+	font: bold 36px/24px 'Times New Roman', Georgia, serif;
+}
+
+.main p {
+	margin: 0 0 20px 0;
+}
+
+.main h2 {
+	margin: 0 0 31px 0;
+	padding: 0;
+	font-size: 30px;
+}
+
+.main ul {
+	padding-left: 18px;
+	margin: 0 0 22px 0;	
+}
+
+.main .ipsum_dolor {
+	color: red;
+}
+
+.main .ipsum_dolor:hover {
+	color: brown;
+}
+
+.main .ipsum_dolor:active {
+	color: black;
+}
+
+.main h3 {
+	margin: 0 0 29px 0;
+	font-size: 24px;
+}
+
+.main ol {
+	margin: 0 0 25px 0;
+	padding-left: 15px;
+}
+
+.main h4 {
+	font-size: 18px;
+	margin: 0 0 26px 0;
+}
+
+.main blockquote {
+	margin: 0 0 13px 0px;
+	text-align: center;
+}
+
+.main .comment {
+	text-decoration: none;
+	margin: 0 0 97px 0;
+}
+
+.main .comment:active {
+	color: green;
+}
+
+.main .comment:hover {
+	color: red;
+}
+
+.footer {
+	background: #f0f0f0;
+	height: 100px;
+}
+
+.container_footer {
+	max-width: 1063px;
+	margin: 0 auto;
+}
+
+.footer-social {
+	display: inline-block;
+	float: right;
+	margin: 13px 0 0 0;
+}
+
+.footer .social {
+	padding: 0;
+	display: inline-block;
+}
+
+.footer .social li {
+	display: inline-block;
+	margin: 0 0 0 15px;
+}
+
+.footer .footer-text{
+	font: 14px/24px 'Times New Roman', serif;
+}
+
+.social li a {
+	text-decoration: none;
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 15px;
+	background: url('../images/sprite.png') no-repeat;
+	display: block;
+}
+
+.social .facebook {
+	width: 9px;
+}
+
+.footer .social .facebook:hover {
+	background-position: 0 -16px;
+}
+
+.social .twitter {
+	width: 18px;
+	background-position: -26px 0;
+}
+
+.footer .social .twitter:hover {
+	background-position: -26px -16px;
+}
+
+.social .instagram {
+	width: 15px;
+	background-position: -61px 0;
+}
+
+.footer .social .instagram:hover {
+	background-position: -61px -16px;
+}
+
+/* .footer {
+	background: #f0f0f0;
+	padding: 30px 0 45px;
+	
+
+} */
+
+/* .container_footer {
+	max-width: 1200px; ширина была 900
+	margin: 0 auto;
+Это добавила я
+	padding-left: 920px;
+    box-sizing: border-box;
+} */
+
+/* Первый вариант */
+
+/* .container_footer:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.footer-text {
+	float: left;
+	margin: 0 10px 0 0;
+
+}
+
+.footer a {
+	margin-left: 20px;
+}
+
+.social li {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+.social {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.social li a {
+	height: 15px;
+	display: block;
+	background: url('../images/sprite.png') no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.footer .social .facebook {
+	width: 9px;
+}
+
+.footer .social .facebook:hover {
+	background-position: 0 -15px;
+}
+
+.footer .social .twitter {
+	width: 18px;
+	background-position: -26px 0;
+}
+
+.footer .social .twitter:hover {
+	background-position: -26px -15px;
+}
+
+.footer .social .instagram {
+	width: 15px;
+	background-position: -60px 0;
+}
+
+.footer .social .instagram:hover {
+	background-position: -60px -15px;
+} */
+ 
+/* Вариант с инлайн блоками */ 
+/* .footer {
+	background: #f0f0f0;
+	padding: 30px 0 45px;
+	height: 100px;
+}
+
+.container_footer {
+	max-width: 1063px;
+	margin: 0 auto;
+	padding: 0 0 0 909px;
+	box-sizing: border-box;
+}
+
+.footer .footer-text,
+.footer .social {
+	display: inline-block;
+	vertical-align: right;	
+}
+
+.footer .social {
+
+}
+
+.footer .social li {
+	display: inline-block;
+	margin: 0 0 0 20px;
+	position: relative;
+	right: 50px;
+}
+
+.footer .footer-text{
+}
+
+.social li a {
+	text-decoration: none;
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 15px;
+	background: url('../images/sprite.png') no-repeat;
+	display: block;
+}
+
+.social .facebook {
+	width: 9px;
+}
+
+.social .twitter {
+	width: 18px;
+	background-position: -26px 0;
+}
+
+.social .instagram {
+	width: 15px;
+	background-position: -61px 0;
+} */
+
+
