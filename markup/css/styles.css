@@ -142,21 +142,76 @@ body {
 }
 
 .footer {
-	background-color: #f0f0f0;
-	height: 100px;
-	margin: 100px auto 0 auto;
-	box-sizing: border-box;
-	width: 1200px;
+	background: #f0f0f0;
+	padding: 30px 0 45px;
+
 }
 
-.footer .social {
-	display: inline-block;
-	position: relative;
-	top: 35px;
-	left: 990px;
+.container_footer {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.container_footer:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.footer-text {
+	float: left;
+	margin: 0 10px 0 0;
+
 }
 
 .footer a {
 	margin-left: 20px;
 }
+
+.social li {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+.social {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.social li a {
+	height: 15px;
+	display: block;
+	background: url('../images/sprite.png') no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.footer .social .facebook {
+	width: 9px;
+}
+
+.footer .social .facebook:hover {
+	background-position: 0 -15px;
+}
+
+.footer .social .twitter {
+	width: 18px;
+	background-position: -26px 0;
+}
+
+.footer .social .twitter:hover {
+	background-position: -26px -15px;
+}
+
+.footer .social .instagram {
+	width: 15px;
+	background-position: -60px 0;
+}
+
+.footer .social .instagram:hover {
+	background-position: -60px -15px;
+}
+
 
