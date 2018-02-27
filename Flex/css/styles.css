@@ -469,12 +469,6 @@ a:hover {
 .feedback span {
 	margin: 0 0 0 15px;
 }
-/*
-.contact-info ul{
-
-	margin: 0;
-	padding: 0;
-}*/
 
 .contacts .field {
 	display: flex;
@@ -483,9 +477,7 @@ a:hover {
     flex-wrap: wrap;
     margin: 0 20px 0 0;
 }
-
-
-        
+      
 .field input {
     flex-basis: 48%;
     margin: 0 0 20px;
@@ -546,35 +538,3 @@ a:hover {
 }
 
 
-/*.info {
-	 display: flex;
-}
-
-.contacts input {
-	padding: 5px;
-}
-
-.contacts input[type="text"] {
-	flex-basis: 220px;
-    max-height: 30px;
-    flex-grow: 1;
-}
-
-.contacts input[type="email"] {
-    flex-basis: 220px;
-    max-height: 30px;
-    flex-grow: 1;
-}
-
-.contacts textarea {
-    flex-basis: 460px;
-    max-height: 120px;
-    min-height: 100px;
-}*/
-
-/*<i class="fa fa-search"></i> Значок поиска*/
-/*<i class="fa fa-facebook-f"></i>*/
-/*<i class="fa fa-twitter"></i>*/
-/*<i class="fa fa-map-marker-alt"></i>*/
-/*stearling*/
-/*<i class="fa fa-phone-square"></i>*/
