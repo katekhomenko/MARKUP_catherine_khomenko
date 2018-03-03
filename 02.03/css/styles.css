@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?olmzl4');
+  src:  url('../fonts/icomoon.eot?olmzl4#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?olmzl4') format('truetype'),
+    url('../fonts/icomoon.woff?olmzl4') format('woff'),
+    url('../fonts/icomoon.svg?olmzl4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google:before {
+  content: "\e900";
+  color: #c8c8c8;
+}
+.icon-link:before {
+  content: "\e9cb";
+  color: #c8c8c8;
+}
+.icon-bookmark:before {
+  content: "\e9d2";
+  color: #989b9f;
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+  color: #c8c8c8;
+}
+.icon-facebook2:before {
+  content: "\ea91";
+  color: #c8c8c8;
+}
+.icon-twitter:before {
+  content: "\ea96";
+  color: #c8c8c8;
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+  color: #c8c8c8;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: 14px/30px Arial, sans-serif;
+	color: #636060;
+	background: #e1e1df;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	overflow: hidden;
+	width: 100%;
+	padding: 107px 0 0 0;
+}
+
+article {
+	background: #fff;
+	padding: 49px 46px 70px 32px;
+}
+
+.container {
+	display: flex;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+header {
+	color: #989b9f;
+	margin: 0 0 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+header .item {
+	display: inline-block;
+	margin: 0 26px 0 0;
+}
+
+header .timer {
+	margin: 0 0 0 auto;
+}
+
+.main-block h1 {
+	font: 28px/1.5 'Yanone Kaffeesatz', sans-serif;
+	margin: 0 0 25px 0;
+}
+
+.figure {
+	float: left;
+	margin: 0 32px 0 0;
+}
+
+.figure img {
+	border: 5px solid #f0f0ef;
+	margin: 0 0 15px 0;
+	width: 223px;
+	height: 221px;
+}
+
+.main-block h1 {
+	color: #000;
+	margin: 0 0 23px;
+}
+
+.first-p {
+	color: #000;
+	font: 17px/24px Arial, sans-serif;
+	margin: 0 0 33px;
+}
+
+.second-p {
+	line-height: 24px;
+}
+
+.picture-sidebar {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 0 54px;
+    text-align: center;
+}
+
+.picture-sidebar h1{
+	font-size: 20px;
+	line-height: 24px;
+	color: #000;
+	margin: 0;
+}
+
+.picture-sidebar .name{
+	font-size: 12px;
+	line-height: 18px;
+	color: #e6618c;
+	margin: 0 0 15px 0;
+}
+
+.picture-sidebar img {
+	margin: 0 0 35px 0;
+	width: 46px;
+	height: 46px;
+}
