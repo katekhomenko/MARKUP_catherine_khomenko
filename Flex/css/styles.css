@@ -38,12 +38,13 @@ a:hover {
 }
 
 .container {
-	max-width: 940px;
+	max-width: 970px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	padding: 0 15px;
 }
 
 .header {
@@ -99,7 +100,7 @@ a:hover {
 }
 
 .video-container {
-	max-width: 600px;
+	max-width: 630px;
 	margin: 57px auto;
 	font-size: 18px;
 	line-height: 1.5;
@@ -108,6 +109,7 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0 15px;
 }
 
 .video-container h1 {
@@ -162,12 +164,14 @@ a:hover {
 	margin: auto;
 	width: 100%;
 	flex-direction: column;
+	padding: 0;
 }
 
 .header-section {
     font-size: 16px;
     text-align: center;
     margin: 0 0 28px;
+    padding: 0 15px;
 }
 
 .header-section h1 {
@@ -216,7 +220,8 @@ a:hover {
 	position: relative;
 	width: 180px;
 	height: 180px;
-	margin: 0 30px 34px 0;
+	margin: 0 16px 34px 16px;
+	display: flex;
 }
 
 .portfolio-item .static img {
@@ -228,10 +233,10 @@ a:hover {
 
 .portfolio-item .hover {
 	position: absolute;
-	top: 0;
+/*	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 0;*/
 	background: red;
 	border-radius: 100%;
 	background: rgba(22, 160, 134, 0.75);
@@ -241,27 +246,30 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transform: translateY(-100%);
-	transition: transform 0.6s cubic-bezier(.91, .33, .42, 1.54), opacity 0.3s ease;
-	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.6s cubic-bezier(1,.21,.04,.79), opacity 0.3s ease;
 	opacity: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .portfolio {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 /*	margin: 0 -30px;*/
 }
+
+
 
 .portfolio-item .hover p{
 	margin: 0;
 }
 
 .portfolio-item:hover .hover {
-	transform: translateY(0);
+	transform: scale(1);
 	opacity: 1;
-	visibility: visible;
+	/*visibility: visible;*/
 }
 
 .portfolio-item .fa-search {
@@ -355,7 +363,11 @@ a:hover {
 	position: relative;
 }
 
-
+@media all and (max-width: 950px) {
+	.contacts .container.container-contacts {
+		align-items: center;
+	}
+}
 
 
 @media all and (max-width: 768px) {
@@ -367,11 +379,13 @@ a:hover {
 		display: block;
 		max-width: 100%;
 	}
-	
-	
-	/*.nav ul {
-		flex-direction: column;
-	}*/
+	.section-green {
+		padding: 0 45px;
+	}
+	.person-block {
+		margin: 0 0 15px;
+	}
+
 	.container {
 		justify-content: space-between;
 	}
@@ -406,9 +420,6 @@ a:hover {
 		transition: right 0.3s ease;
 	}
 	
-	/*.nav-active .btn-nav {
-		right: 240px;
-	}*/
 	.header {
 	    position: relative;
 
@@ -447,9 +458,7 @@ a:hover {
 	    transition: left 0.3s ease;
 	}
 
-	.logo img {
-		margin: 0 0 0 20px;
-	}
+	
 	.section {
 		padding: 10px 0;
 		min-height: 100%;
@@ -458,6 +467,51 @@ a:hover {
 }
 
 
+
+@media all and (max-width: 705px) {
+	.info {
+		flex-direction: column;
+		align-self: center;
+	}
+	.field button {
+		margin: 0 auto;
+	}
+	
+	.contacts form.field {
+		margin: 0 0 25px;
+	}
+}
+
+@media all and (max-width: 650px) {
+	.portfolio-item {
+		margin: 0 0 34px 0;
+	}
+	.portfolio {
+		justify-content: space-around;
+	}
+
+	.people-holder {
+		flex-direction: column;
+		padding: 0 55px;
+	}
+	
+}
+
+@media all and (max-width: 400px) {
+	.contacts .field {
+		flex-direction: column;
+	}
+	.field button {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 430px) {
+	.footer .container {
+		flex-direction: column;
+		text-align: center;
+	}
+}
 
 @media all and (max-width: 490px) {
 	ul.filter-list {
@@ -476,53 +530,7 @@ a:hover {
 	}
 }
 
-@media all and (max-width: 650px) {
-	.portfolio-item {
-		margin: 0 0 34px 0;
-	}
-	.portfolio {
-		justify-content: space-around;
-	}
-
-	.people-holder {
-		flex-direction: column;
-	}
-	
-}
-
-
-
-
-/*@media all and (max-width: 380px) {
-	.nav {
-		align-self: center;
-	}
-	.nav ul {
-		flex-direction: column;
-	}
-	.container {
-		flex-direction: column;
-	}
-	.nav ul a {
-		padding: 10px 68px;
-		text-align: center;
-	}
-
-}*/
-
-
-/*@media all and (max-width: 593px) {
-	.container {
-		justify-content: center;
-	}
-	.nav ul {
-		margin: 0 10px;
-	}
-}
-
-*/
-
-@media all and (max-width: 320px) {
+@media all and (max-width: 319px) {
 	.nav ul {
 		flex-direction: column;
 	}
@@ -534,26 +542,18 @@ a:hover {
 	.portfolio {
 		flex-direction: column;
 	}
-/*	.portfolio-item {
-		width: 100px;
-		height: 100px;
-
-	}
-
-	.portfolio-item .static img {
-		width: 100px;
-		height: 100px;
-	}*/
-
-	
 
 }
 
 
 
+ 
+
+
+
 .person-block {
 	background: #fff;
-	flex-basis: 24%;
+
 }
 
 .section.section-green {
@@ -563,6 +563,10 @@ a:hover {
 
 .section-green .header-section {
 	color: #fff;
+}
+
+.section-green .container {
+	padding: 0 15px;
 }
 
 
@@ -650,6 +654,7 @@ a:hover {
 .contacts p {
 	align-self: center;
 	margin: 0 0 50px 0;
+	text-align: center;
 }
 
 .info {
@@ -664,6 +669,11 @@ a:hover {
 	letter-spacing: -1.8px;
 }
 
+.contact-info {
+	padding: 0 10px;
+}
+
+
 .feedback span {
 	margin: 0 0 0 15px;
 }
@@ -673,7 +683,8 @@ a:hover {
     max-width: 460px;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 20px 0 0;
+    margin: 0;
+    padding: 0 10px;
 }
       
 .field input {
@@ -723,7 +734,7 @@ a:hover {
 
 .footer {
 	background: #2d3e50;
-	padding: 8px 0;
+	padding: 8px 10px;
 	color: #fff;
 }
 
@@ -738,8 +749,8 @@ a:hover {
 
 
 .swiper-container {
-     width: 600px;
-     height: 400px;
+     width: 100%;
+     height: 100%;
 }
 .swiper-slide {
       text-align: center;
@@ -749,3 +760,8 @@ a:hover {
       justify-content: center;
       align-items: center;
   }
+
+
+.section-green .swiper-wrapper {
+	justify-content: center;
+}
