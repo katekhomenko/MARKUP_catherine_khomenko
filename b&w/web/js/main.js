@@ -1,0 +1,2 @@
+"use strict";var title=document.getElementsByClassName("sidebar__elem");$(function(){$(".sidebar__elem").click(function(){$(".sidebar__elem_dropped").not($(this)).removeClass("sidebar__elem_dropped"),$(".sidebar__elem").addClass("sidebar__elem"),$(this).toggleClass("sidebar__elem_dropped")})}),$(function(){$(".nav-btn-white").click(function(){$(".page").toggleClass("white-active")})}),$(function(){$(".nav-btn").click(function(){$(".page").toggleClass("active")})}),$(document).ready(function(){App.init()});
+//# sourceMappingURL=main.js.map
